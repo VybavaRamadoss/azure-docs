@@ -35,7 +35,7 @@ For SAP workloads, the supported uses of Azure Files shares are:
 
 When you plan your deployment with Azure Files, consider the following important points. The term share in this section applies to both SMB share and NFS volume.
 
-- The minimum share size is 100 GiB. With Azure Files SSD, you pay for the [capacity of the provisioned shares](/azure/storage/files/understanding-billing#provisioned-model).
+- The minimum share size is 32 GiB. With Azure Files SSD, you pay for the [capacity of the provisioned shares](/azure/storage/files/understanding-billing#provisioned-model).
 - Size your file shares not only based on capacity requirements, but also on IOPS and throughput requirements. For details, see [Azure files share targets](/azure/storage/files/storage-files-scale-targets#azure-file-share-scale-targets).
 - Test the workload to validate your sizing and ensure that it meets your performance targets. To learn how to troubleshoot performance issues with NFS on Azure Files, consult [Troubleshoot Azure file share performance](/azure/storage/files/storage-troubleshooting-files-performance).
 - Deploy a separate `sapmnt` share for each SAP system.
